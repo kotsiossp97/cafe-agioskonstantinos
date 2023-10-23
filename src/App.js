@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { CssBaseline, ThemeProvider, Typography, Container, Toolbar, Divider } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import theme from "./context/theme";
+import TopNavbar from "./layout/TopNavbar";
+import Landing from "./components/Landing";
+import Menu from "./components/Menu/Menu";
+import Footer from "./layout/Footer";
+import Contact from "./components/Contact";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const [menuItems, setMenuItems] = useState(null)
+    useEffect(()=>{
+        fetch("https://cafe-agioskonstantinos-default-rtdb.europe-west1.firebasedatabase.app/.json")
+            .then(resp => resp.json())
+            .then(data=> setMenuItems(data))
+    }, [])
+
+    return (
+        <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <TopNavbar />
+            <Landing />
+            {menuItems && <Menu data={menuItems}/>}
+            <Contact />
+            <Footer />
+        </ThemeProvider>
+    )
+};
 
 export default App;

@@ -1,0 +1,21 @@
+.footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    &__copyright {
+        text-align: center;
+        padding-top: 1rem;
+
+        a,
+        a:visited,
+        a:active {
+            text-decoration: none;
+            color: currentColor;
+            transition: all .2s ease-in;
+
+            &:hover {
+                color: aqua;
+                font-size: 120%;
+            }
+        }
+    }
+}

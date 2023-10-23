@@ -1,0 +1,14 @@
+.navbarLogo {
+    max-height: 70px;
+    height: 100%;
+    object-fit: cover;
+    filter: invert(1) drop-shadow(0 0 white);
+    
+    &__white {
+        filter: invert(1) ;
+        width: 100%;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
