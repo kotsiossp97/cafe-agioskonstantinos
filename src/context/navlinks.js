@@ -1,15 +1,15 @@
 const navLinks = [
     {
-        name: "Home",
-        href: "#home"
+        href: "#home",
+        key: "home",
     },
     {
-        name: "Menu",
-        href: "#menu"
+        href: "#menu",
+        key: "menu",
     },
     {
-        name: "Contact Us",
-        href: "#contact"
+        href: "#contact",
+        key: "contact",
     }
 ]
 

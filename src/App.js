@@ -1,5 +1,5 @@
-import { CssBaseline, ThemeProvider, Typography, Container, Toolbar, Divider } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import React from "react";
 import theme from "./context/theme";
 import TopNavbar from "./layout/TopNavbar";
 import Landing from "./components/Landing";
@@ -7,24 +7,53 @@ import Menu from "./components/Menu/Menu";
 import Footer from "./layout/Footer";
 import Contact from "./components/Contact";
 
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import translationGR from "./locales/gr";
+import translationEN from "./locales/en";
+import menuData from "./data/menu";
+
+const resources = {
+    gr: {
+        translation: translationGR,
+    },
+    en: {
+        translation: translationEN,
+    },
+};
+
+i18n.use(initReactI18next).init({
+    resources,
+    lng: "en",
+    fallbackLng: "en",
+    interpolation: {
+        escapeValue: false,
+    },
+})
+
+
 const App = () => {
-    const [menuItems, setMenuItems] = useState(null)
-    useEffect(()=>{
-        fetch("https://cafe-agioskonstantinos-default-rtdb.europe-west1.firebasedatabase.app/.json")
-            .then(resp => resp.json())
-            .then(data=> setMenuItems(data))
-    }, [])
+    // const [menuItems, setMenuItems] = useState(null);
+    // useEffect(() => {
+    //     fetch(
+    //         "https://cafe-agioskonstantinos-default-rtdb.europe-west1.firebasedatabase.app/.json"
+    //     )
+    //         .then((resp) => resp.json())
+    //         .then((data) => setMenuItems(data));
+    // }, []);
+
+    const menuItems = menuData
 
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <TopNavbar />
             <Landing />
-            {menuItems && <Menu data={menuItems}/>}
+            {menuItems && <Menu data={menuItems} />}
             <Contact />
             <Footer />
         </ThemeProvider>
-    )
+    );
 };
 
 export default App;

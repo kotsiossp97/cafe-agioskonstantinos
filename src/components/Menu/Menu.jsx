@@ -9,9 +9,11 @@ import {
     Typography,
 } from "@mui/material";
 import MenuItem from "./MenuItem";
+import { useTranslation } from "react-i18next";
 
 const Menu = (props) => {
     const menuItems = props.data
+    const { t } = useTranslation()
     const categories = Object.entries(menuItems).map(([key, category]) => ({title: category.title, dataKey: key}))
 
     const [tabIndex, setTabIndex] = useState(0);
@@ -28,7 +30,7 @@ const Menu = (props) => {
             sx={{ paddingX: { xs: "1rem", sm: "5rem", md: "10rem" } }}
         >
             <div>
-                <Typography textAlign={'center'} variant="h2">MENU</Typography>
+                <Typography textAlign={'center'} variant="h2">{t("menu")}</Typography>
                 <Divider sx={{marginY: "1rem"}} />
                 <Tabs
                     value={tabIndex}

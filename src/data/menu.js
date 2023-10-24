@@ -1,57 +1,34 @@
+import alcoholItems from "./alcohol";
+import coffeeItems from "./coffee";
+import foodItems from "./food";
+import snacksItems from "./snacks";
+import softDrinksItems from "./softDrinks";
+import sweetItems from "./sweets";
+
 const menuData = {
-    food: [
-        {
-            name: `Beef Doner - "Skepasti"`,
-            desc: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam tempore cumque recusandae distinctio provident consequatur nostrum repellat eaque quisquam voluptates.`,
-            price: 7.5,
-            img: `skepasti.png`
-        },
-        {
-            name: `Special Burger"`,
-            desc: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam tempore cumque recusandae distinctio provident consequatur nostrum repellat eaque quisquam voluptates.`,
-            price: 7,
-            img: `burger_special.png`
-        }
-    ],
-    sweets: [
-        {
-            name: `Waffle`,
-            desc: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam tempore cumque recusandae distinctio provident consequatur nostrum repellat eaque quisquam voluptates.`,
-            price: 6,
-            img: `vafla.png`
-        }
-    ],
-    coffee: [],
-    
-    nonAlcoholic: [],
-    alcoholic: []
-
-}
-
-export const MenuCategories = [
-    {
-        title: 'Food',
-        dataKey: 'food'
+    "0_food": {
+        title: "Food",
+        items: foodItems
     },
-    {
+    "1_sweets": {
         title: "Sweets",
-        dataKey: 'sweets'
+        items: sweetItems
     },
-    {
+    "2_coffee": {
         title: "Coffee",
-        dataKey: 'coffee'
+        items: coffeeItems
     },
-    {
-        title: "Soft Drinks",
-        dataKey: 'nonAlcoholic'
-    },
-    {
+    "3_alcoholic": {
         title: "Alcoholic Drinks",
-        dataKey: 'alcoholic'
+        items: alcoholItems
     },
-    {
+    "4_nonAlcoholic": {
+        title: "Non-Alcoholic Drinks",
+        items: softDrinksItems
+    },
+    "5_snacks": {
         title: "Snacks",
-        dataKey: 'snacks'
+        items: snacksItems
     },
-]
-export default menuData
+};
+export default menuData;

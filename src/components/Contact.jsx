@@ -3,8 +3,11 @@ import styles from "./contact.module.scss";
 import { Box, Button, Divider, Typography } from "@mui/material";
 import { Facebook, Instagram, Phone } from "@mui/icons-material";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+    const { t } = useTranslation()
+
     return (
         <Box
             className={styles.contact}
@@ -12,7 +15,7 @@ const Contact = () => {
             sx={{ paddingX: { xs: "1rem", sm: "5rem", md: "10rem" } }}
         >
             <Typography textAlign={"center"} variant="h2">
-                CONTACT
+                {t("contact")}
             </Typography>
             <Divider sx={{ marginY: "1rem" }} />
             <Box
@@ -73,13 +76,13 @@ const Contact = () => {
                         />
                         <Marker position={[34.8657418, 33.0578542]}>
                             <Popup>
-                                <b>Agios Konstantinos Cafe</b><br />
+                                <b>{t("cafe")}</b><br />
                                 <address style={{padding: "1rem"}}>
-                                    Megalou Konstantinou<br />
-                                    Agios Konstantinos, 4561<br />
-                                    Limassol, Cyprus
+                                    {t("addressLine1")}<br />
+                                    {t("addressLine2")}<br />
+                                    {t("addressLine3")}
                                 </address>
-                                <Button variant="contained" color="primary" sx={{textTransform: "none", color: "white!important"}} href="https://maps.app.goo.gl/zNtx1CNSaC3G4CYk9" target="_blank">View on Google Maps</Button>
+                                <Button variant="contained" color="primary" sx={{textTransform: "none", color: "white!important"}} href="https://maps.app.goo.gl/zNtx1CNSaC3G4CYk9" target="_blank">{t("viewGMaps")}</Button>
                             </Popup>
                         </Marker>
                     </MapContainer>

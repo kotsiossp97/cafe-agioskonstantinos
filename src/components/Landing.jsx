@@ -4,9 +4,30 @@ import styles from "./landing.module.scss";
 import { Button, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 import { smoothScroll } from "../utils/utils";
-import logo from '../assets/cafe_logo.png'
+import logo from "../assets/cafe_logo.png";
+import { useTranslation } from "react-i18next";
 
 const Landing = () => {
+    const { t } = useTranslation();
+
+    const Typing = () => (
+        <TypeAnimation
+            sequence={[
+                t("typingString1"),
+                1000,
+                t("typingString2"),
+                1000,
+                t("typingString3"),
+                1000,
+                t("typingString4"),
+                1000,
+            ]}
+            speed={50}
+            preRenderFirstString
+            className={styles.landing__content_title}
+            repeat={Infinity}
+        />
+    );
 
     return (
         <div className={styles.landing} id="home">
@@ -24,27 +45,20 @@ const Landing = () => {
                     className={styles.landing__content_title}
                     variant="h2"
                 >
-                    <TypeAnimation
-                        sequence={[
-                            "A tasty getaway in the mountains.",
-                            1000,
-                            "A tasty getaway in clean air.",
-                            1000,
-                            "A tasty getaway in a cool climate.",
-                            1000,
-                            "A tasty getaway with great view.",
-                            1000,
-                        ]}
-                        speed={50}
-                        preRenderFirstString
-                        className={styles.landing__content_title}
-                        repeat={Infinity}
-                    />
+                    <Typing />
                 </Typography>
             </div>
 
             <div className={styles.landing__actions}>
-                <Button variant="contained" size="large" onClick={()=>{smoothScroll("menu")}}>View Menu</Button>
+                <Button
+                    variant="contained"
+                    size="large"
+                    onClick={() => {
+                        smoothScroll("menu");
+                    }}
+                >
+                    {t("viewMenu")}
+                </Button>
             </div>
         </div>
     );

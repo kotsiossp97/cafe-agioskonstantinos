@@ -4,11 +4,14 @@ import {
     Button,
     Divider,
     Drawer,
+    FormControl,
     IconButton,
     List,
     ListItem,
     ListItemButton,
     ListItemText,
+    MenuItem,
+    Select,
     Toolbar,
     useScrollTrigger,
 } from "@mui/material";
@@ -19,13 +22,20 @@ import navLinks from "../context/navlinks";
 import logo from "../assets/cafe_logo.png";
 import styles from "./topnavbar.module.scss";
 import { smoothScroll } from "../utils/utils";
+import { useTranslation } from "react-i18next";
 
 const TopNavbar = (props) => {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const { t, i18n } = useTranslation();
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
+
+    const handleLanguageChange = (e) => {
+        // console.log(e.target.value)
+        i18n.changeLanguage(e.target.value)
+    }
 
     const trigger = useScrollTrigger({
         disableHysteresis: true,
@@ -41,13 +51,13 @@ const TopNavbar = (props) => {
                 elevation={trigger ? 4 : 0}
                 enableColorOnDark={trigger}
             >
-                <Toolbar sx={{ mx: 2 }} disableGutters>
+                <Toolbar sx={{ mx: { xs: 1, sm: 2}, justifyContent: "space-between" }} disableGutters>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ display: { sm: "none" } }}
+                        sx={{ display: { sm: "none" }, width: "20%" }}
                     >
                         <Menu />
                     </IconButton>
@@ -64,9 +74,17 @@ const TopNavbar = (props) => {
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
                         {navLinks.map((link, i) => (
                             <Button key={i} sx={{ color: "inherit" }} onClick={()=> {smoothScroll(link.href)}}>
-                                {link.name}
+                                {t(link.key)}
                             </Button>
                         ))}
+                    </Box>
+                    <Box sx={{ display: "flex", justifyContent:"flex-end" ,width: { xs: "20%", sm: "auto"} }}>
+                        <FormControl size="small">
+                            <Select value={i18n.language} onChange={handleLanguageChange}>
+                                <MenuItem value="en">🇬🇧</MenuItem>
+                                <MenuItem value="gr">🇬🇷</MenuItem>
+                            </Select>
+                        </FormControl>
                     </Box>
                 </Toolbar>
             </AppBar>
@@ -106,7 +124,7 @@ const TopNavbar = (props) => {
                                         sx={{ textAlign: "center" }}
                                         onClick={()=>{smoothScroll(link.href)}}
                                     >
-                                        <ListItemText primary={link.name} />
+                                        <ListItemText primary={t(link.key)} />
                                     </ListItemButton>
                                 </ListItem>
                             ))}
