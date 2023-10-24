@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 
 const Menu = (props) => {
     const menuItems = props.data
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
     const categories = Object.entries(menuItems).map(([key, category]) => ({title: category.title, dataKey: key}))
 
     const [tabIndex, setTabIndex] = useState(0);
@@ -22,6 +22,7 @@ const Menu = (props) => {
     }
 
     const categoryItems = menuItems[categories[tabIndex].dataKey].items
+    const language = i18n.resolvedLanguage.split('-')[0]
 
     return (
         <Box
@@ -45,7 +46,7 @@ const Menu = (props) => {
                     {categories.map((category, i) => (
                         <Tab
                             key={i}
-                            label={category.title}
+                            label={category.title[language]}
                         />
                     ))}
                 </Tabs>

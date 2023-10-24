@@ -21,11 +21,12 @@ const MenuItem = (props) => {
             elevation={3}
         >
             <div className={styles.menuitem__details}>
-                <Typography variant="h5" fontWeight={600} pb={2}>
+                <Typography variant="h5" fontWeight={600} pb={1}>
                     {data.title[language]}
                 </Typography>
                 <Typography
-                    variant="body2"
+                    variant='body1'
+                    sx={{fontSize: { xs: "95%", sm: "100%"}}}
                     className={styles.menuitem__description}
                 >
                     {data.desc[language]}
@@ -42,11 +43,6 @@ const MenuItem = (props) => {
                     </Typography>
                 </div>
             </div>
-            {/* 
-            <div className={styles.menuitem__image}>
-                <img src={image} alt={data.name} className={data.img===""?styles.menuitem__img:""} />
-            </div>
-             */}
         </Card>
     );
 };

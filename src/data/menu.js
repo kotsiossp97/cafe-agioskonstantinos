@@ -7,28 +7,46 @@ import sweetItems from "./sweets";
 
 const menuData = {
     "0_food": {
-        title: "Food",
-        items: foodItems
+        title: {
+            en: "Food",
+            el: "Φαγητο",
+        },
+        items: foodItems,
     },
     "1_sweets": {
-        title: "Sweets",
-        items: sweetItems
+        title: {
+            en: "Sweets",
+            el: "Γλυκα",
+        },
+        items: sweetItems,
     },
     "2_coffee": {
-        title: "Coffee",
-        items: coffeeItems
+        title: {
+            en: "Coffee",
+            el: "Καφες",
+        },
+        items: coffeeItems,
     },
     "3_alcoholic": {
-        title: "Alcoholic Drinks",
-        items: alcoholItems
+        title: {
+            en: "Alcoholic Drinks",
+            el: "Αλκοολ",
+        },
+        items: alcoholItems,
     },
     "4_nonAlcoholic": {
-        title: "Non-Alcoholic Drinks",
-        items: softDrinksItems
+        title: {
+            en: "Non-Alcoholic Drinks",
+            el: "Μη Αλκοολουχα",
+        },
+        items: softDrinksItems,
     },
     "5_snacks": {
-        title: "Snacks",
-        items: snacksItems
+        title: {
+            en: "Snacks",
+            el: "Σνακς",
+        },
+        items: snacksItems,
     },
 };
 export default menuData;
