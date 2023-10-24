@@ -9,6 +9,7 @@ import {
     List,
     ListItem,
     ListItemButton,
+    ListItemIcon,
     ListItemText,
     MenuItem,
     Select,
@@ -80,9 +81,9 @@ const TopNavbar = (props) => {
                     </Box>
                     <Box sx={{ display: "flex", justifyContent:"flex-end" ,width: { xs: "20%", sm: "auto"} }}>
                         <FormControl size="small">
-                            <Select value={i18n.language} onChange={handleLanguageChange}>
-                                <MenuItem value="en">🇬🇧</MenuItem>
-                                <MenuItem value="gr">🇬🇷</MenuItem>
+                            <Select value={i18n.resolvedLanguage} onChange={handleLanguageChange}>
+                                <MenuItem value="en-US">🇬🇧</MenuItem>
+                                <MenuItem value="el-GR">🇬🇷</MenuItem>
                             </Select>
                         </FormControl>
                     </Box>
@@ -100,7 +101,7 @@ const TopNavbar = (props) => {
                         display: { xs: "block", sm: "none" },
                         "& .MuiDrawer-paper": {
                             boxSizing: "border-box",
-                            width: "250px",
+                            width: { xs: "65vw" },
                         },
                     }}
                 >
@@ -124,6 +125,9 @@ const TopNavbar = (props) => {
                                         sx={{ textAlign: "center" }}
                                         onClick={()=>{smoothScroll(link.href)}}
                                     >
+                                        <ListItemIcon>
+                                            {link.icon}
+                                        </ListItemIcon>
                                         <ListItemText primary={t(link.key)} />
                                     </ListItemButton>
                                 </ListItem>

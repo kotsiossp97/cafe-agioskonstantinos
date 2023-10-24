@@ -12,25 +12,27 @@ import { initReactI18next } from "react-i18next";
 import translationGR from "./locales/gr";
 import translationEN from "./locales/en";
 import menuData from "./data/menu";
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
-    gr: {
+    "el-GR": {
         translation: translationGR,
     },
-    en: {
+    "en-US": {
         translation: translationEN,
     },
 };
 
-i18n.use(initReactI18next).init({
+
+i18n
+.use(LanguageDetector)
+.use(initReactI18next).init({
     resources,
-    lng: "en",
-    fallbackLng: "en",
+    fallbackLng: "en-US",
     interpolation: {
         escapeValue: false,
     },
 })
-
 
 const App = () => {
     // const [menuItems, setMenuItems] = useState(null);

@@ -2,11 +2,11 @@ const softDrinksItems = [
     {
         title: {
             en: "",
-            gr: "",
+            el: "",
         },
         desc: {
             en: "",
-            gr: "",
+            el: "",
         },
         img: "",
         price: "",

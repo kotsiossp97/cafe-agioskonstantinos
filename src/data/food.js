@@ -2,11 +2,11 @@ const foodItems = [
     {
         title: {
             en: "Beef Doner",
-            gr: "Γύρος Βοδινό",
+            el: "Γύρος Βοδινό",
         },
         desc: {
             en: "Fresh beef doner, warm pita, yogurt, tomato, cucumber and lettuce.",
-            gr: "Φρέσκο βοδινό κρέας, ζεστή πίτα, γιαούρτι, ντομάτα, αγγούρι και μαρούλι.",
+            el: "Φρέσκο βοδινό κρέας, ζεστή πίτα, γιαούρτι, ντομάτα, αγγούρι και μαρούλι.",
         },
         img: "gyros.png",
         price: 6,
@@ -14,11 +14,11 @@ const foodItems = [
     {
         title: {
             en: 'Beef Doner - "Skepasti"',
-            gr: 'Γύρος Βοδινό - "Σκεπαστή"',
+            el: 'Γύρος Βοδινό - "Σκεπαστή"',
         },
         desc: {
             en: "Beef doner with cheese and mustard sauce in greek pitta with french fries.",
-            gr: "Βοδινός γύρος με τυρί και σάλτσα μουστάρδας σε ελληνική πίτα με πατάτες τηγανιτές.",
+            el: "Βοδινός γύρος με τυρί και σάλτσα μουστάρδας σε ελληνική πίτα με πατάτες τηγανιτές.",
         },
         img: "skepasti.png",
         price: 7,
@@ -26,11 +26,11 @@ const foodItems = [
     {
         title: {
             en: "Burger",
-            gr: "Χάμπουργκερ",
+            el: "Χάμπουργκερ",
         },
         desc: {
             en: "Beef burger, cheese, tomato, cucumber, lettuce and french fries.",
-            gr: "Μοσχαρίσιο μπιφτέκι, τυρί, ντομάτα, αγγούρι, μαρούλι και πατάτες τηγανιτές.",
+            el: "Μοσχαρίσιο μπιφτέκι, τυρί, ντομάτα, αγγούρι, μαρούλι και πατάτες τηγανιτές.",
         },
         img: "",
         price: 5,
@@ -38,11 +38,11 @@ const foodItems = [
     {
         title: {
             en: "Special Burger",
-            gr: 'Χάμπουργκερ - "Σπέσιαλ"',
+            el: 'Χάμπουργκερ - "Σπέσιαλ"',
         },
         desc: {
             en: "Beef burger, cheese, bacon, tomato, cucumber, lettuce and french fries.",
-            gr: "Μοσχαρίσιο μπιφτέκι, τυρί, μπέικον, ντομάτα, αγγούρι, μαρούλι και πατάτες τηγανιτές.",
+            el: "Μοσχαρίσιο μπιφτέκι, τυρί, μπέικον, ντομάτα, αγγούρι, μαρούλι και πατάτες τηγανιτές.",
         },
         img: "burger_special.png",
         price: 6,
@@ -50,11 +50,11 @@ const foodItems = [
     {
         title: {
             en: "Chicken Souvlaki",
-            gr: "Σουβλάκι Κοτόπουλο",
+            el: "Σουβλάκι Κοτόπουλο",
         },
         desc: {
             en: "Chicken souvlaki, served with tomato, cucumber, lettuce, french fries and Greek pita.",
-            gr: "Κοτόπουλο σουβλάκι, συνοδεύεται με ντομάτα, αγγούρι, μαρούλι, πατάτες τηγανιτές και ελληνική πίτα",
+            el: "Κοτόπουλο σουβλάκι, συνοδεύεται με ντομάτα, αγγούρι, μαρούλι, πατάτες τηγανιτές και ελληνική πίτα",
         },
         img: "souvlaki.png",
         price: 6,
@@ -62,11 +62,11 @@ const foodItems = [
     {
         title: {
             en: "Chicken Wrap",
-            gr: "Wrap Κοτόπουλο",
+            el: "Wrap Κοτόπουλο",
         },
         desc: {
             en: "",
-            gr: "",
+            el: "",
         },
         img: "chicken_wrap.png",
         price: 6,
@@ -74,11 +74,11 @@ const foodItems = [
     {
         title: {
             en: "Chicken Nuggets",
-            gr: "Κοτομπουκίες",
+            el: "Κοτομπουκίες",
         },
         desc: {
             en: "",
-            gr: "",
+            el: "",
         },
         img: "",
         price: 5,
@@ -86,11 +86,11 @@ const foodItems = [
     {
         title: {
             en: "Pizza Margarita",
-            gr: "Πίτσα Μαργαρίτα",
+            el: "Πίτσα Μαργαρίτα",
         },
         desc: {
             en: "",
-            gr: "",
+            el: "",
         },
         img: "pizza_margarita.png",
         price: 5,
@@ -98,11 +98,11 @@ const foodItems = [
     {
         title: {
             en: "Pizza Special",
-            gr: "Πίτσα Σπέσιαλ",
+            el: "Πίτσα Σπέσιαλ",
         },
         desc: {
             en: "",
-            gr: "",
+            el: "",
         },
         img: "pizza_special.png",
         price: 6,

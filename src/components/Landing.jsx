@@ -6,6 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import { smoothScroll } from "../utils/utils";
 import logo from "../assets/cafe_logo.png";
 import { useTranslation } from "react-i18next";
+import { RestaurantMenu } from "@mui/icons-material";
 
 const Landing = () => {
     const { t } = useTranslation();
@@ -53,6 +54,7 @@ const Landing = () => {
                 <Button
                     variant="contained"
                     size="large"
+                    startIcon={<RestaurantMenu />}
                     onClick={() => {
                         smoothScroll("menu");
                     }}

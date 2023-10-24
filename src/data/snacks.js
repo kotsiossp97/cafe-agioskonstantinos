@@ -2,11 +2,11 @@ const snacksItems = [
     {
         title: {
             en: "",
-            gr: "",
+            el: "",
         },
         desc: {
             en: "",
-            gr: "",
+            el: "",
         },
         img: "",
         price: "",

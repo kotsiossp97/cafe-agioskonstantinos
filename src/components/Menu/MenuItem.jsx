@@ -10,6 +10,9 @@ const MenuItem = (props) => {
             ? require(`../../assets/items/noImage.png`)
             : require(`../../assets/items/${data.img}`);
     const { i18n } = useTranslation();
+
+    const language = i18n.resolvedLanguage.split('-')[0]
+
     return (
         <Card
             sx={{ bgcolor: "primary.main" }}
@@ -19,13 +22,13 @@ const MenuItem = (props) => {
         >
             <div className={styles.menuitem__details}>
                 <Typography variant="h5" fontWeight={600} pb={2}>
-                    {data.title[i18n.language]}
+                    {data.title[language]}
                 </Typography>
                 <Typography
                     variant="body2"
                     className={styles.menuitem__description}
                 >
-                    {data.desc[i18n.language]}
+                    {data.desc[language]}
                 </Typography>
                 <div className={styles.menuitem__price}>
                     <Typography variant="body2">

@@ -2,11 +2,11 @@ const coffeeItems = [
     {
         title: {
             en: "Cyprus Coffee",
-            gr: "Κυπριακός Καφές",
+            el: "Κυπριακός Καφές",
         },
         desc: {
             en: "A traditional and robust coffee with a touch of cardamom, a signature of Cypriot culture.",
-            gr: "Παραδοσιακός και δυνατός καφές, υπογραφή της κυπριακής κουλτούρας.",
+            el: "Παραδοσιακός και δυνατός καφές, υπογραφή της κυπριακής κουλτούρας.",
         },
         img: "cyprus_coffee.png",
         price: 1.5,
@@ -14,11 +14,11 @@ const coffeeItems = [
     {
         title: {
             en: "Freddo Espresso",
-            gr: "Freddo Espresso",
+            el: "Freddo Espresso",
         },
         desc: {
             en: "Espresso shot blended with ice.",
-            gr: "Καφές εσπρέσο αναμεμειγμένος με πάγο.",
+            el: "Καφές εσπρέσο αναμεμειγμένος με πάγο.",
         },
         img: "freddo.png",
         price: 2,
@@ -26,11 +26,11 @@ const coffeeItems = [
     {
         title: {
             en: "Freddo Cappuccino",
-            gr: "Freddo Cappuccino",
+            el: "Freddo Cappuccino",
         },
         desc: {
             en: "Espresso shot blended with ice and frothed milk topping.",
-            gr: "",
+            el: "",
         },
         img: "freddo_cappuccino.png",
         price: 2.5,
@@ -38,11 +38,11 @@ const coffeeItems = [
     {
         title: {
             en: "Iced Americano",
-            gr: "Κρύο Αμερικάνο",
+            el: "Κρύο Αμερικάνο",
         },
         desc: {
             en: "Cold espresso with ice and water.",
-            gr: "Παγωμένος εσπρέσο με νερό.",
+            el: "Παγωμένος εσπρέσο με νερό.",
         },
         img: "iced_americano.png",
         price: 2,
@@ -50,11 +50,11 @@ const coffeeItems = [
     {
         title: {
             en: "Iced Latte",
-            gr: "Κρύο Λάττε",
+            el: "Κρύο Λάττε",
         },
         desc: {
             en: "Cold espresso with milk.",
-            gr: "Παγωμένος εσπρέσο με γάλα.",
+            el: "Παγωμένος εσπρέσο με γάλα.",
         },
         img: "iced_latte.png",
         price: 2.5,
@@ -62,11 +62,11 @@ const coffeeItems = [
     {
         title: {
             en: "Cappuccino",
-            gr: "Καπουτσίνο",
+            el: "Καπουτσίνο",
         },
         desc: {
             en: "Hot espresso with frothy milk.",
-            gr: "Ζεστός εσπρέσο με αφρόγαλα.",
+            el: "Ζεστός εσπρέσο με αφρόγαλα.",
         },
         img: "cappuccino.png",
         price: 2.5,
@@ -74,11 +74,11 @@ const coffeeItems = [
     {
         title: {
             en: "Americano",
-            gr: "Αμερικάνο",
+            el: "Αμερικάνο",
         },
         desc: {
             en: "Hot espresso with water.",
-            gr: "Ζεστός εσπρέσο με νερό.",
+            el: "Ζεστός εσπρέσο με νερό.",
         },
         img: "americano.png",
         price: 2,
@@ -86,11 +86,11 @@ const coffeeItems = [
     {
         title: {
             en: "Espresso",
-            gr: "Εσπρέσο",
+            el: "Εσπρέσο",
         },
         desc: {
             en: "Double espresso shot.",
-            gr: "Διπλό shot εσπρέσο.",
+            el: "Διπλό shot εσπρέσο.",
         },
         img: "espresso.png",
         price: 2,
@@ -98,11 +98,11 @@ const coffeeItems = [
     {
         title: {
             en: "Frappe",
-            gr: "Φραπέ",
+            el: "Φραπέ",
         },
         desc: {
             en: "A Greek iced coffee delight, perfect for hot days.",
-            gr: "Δροσιστικό ρόφημα από καφέ που φτιάχνεται από κρύο νερό, καφέ σκόνη, ζάχαρη και πάγο, συνήθως σε συνδυασμό με γάλα.",
+            el: "Δροσιστικό ρόφημα από καφέ που φτιάχνεται από κρύο νερό, καφέ σκόνη, ζάχαρη και πάγο, συνήθως σε συνδυασμό με γάλα.",
         },
         img: "frappe.png",
         price: 2,

@@ -40,7 +40,7 @@ const Menu = (props) => {
                     variant="scrollable"
                     scrollButtons
                     allowScrollButtonsMobile
-                    sx={{ marginBottom: '.5rem'}}
+                    sx={{ marginBottom: 2}}
                 >
                     {categories.map((category, i) => (
                         <Tab
@@ -60,6 +60,7 @@ const Menu = (props) => {
                 }}
                 rowSpacing={1}
                 columnSpacing={{xs: 0, lg: 1}}
+                py={4}
             >
                 {
                     categoryItems.map((item, i) => (
