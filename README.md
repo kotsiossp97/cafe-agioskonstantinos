@@ -16,6 +16,11 @@ This is a React application for a cafe called Agios Konstantinos. The applicatio
 - Fontsource
 - Sass
 
+## View Page
+This project is hosted on Google Firebase, view it live on:
+
+https://cafe-agioskonstantinos.web.app
+
 To run the application locally, follow these steps:
 
 1. Clone the repository:

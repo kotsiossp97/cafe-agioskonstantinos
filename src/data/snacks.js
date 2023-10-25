@@ -1,15 +1,27 @@
 const snacksItems = [
     {
         title: {
-            en: "",
-            el: "",
+            en: "Potato Chips",
+            el: "Πατατάκια",
         },
         desc: {
             en: "",
             el: "",
         },
         img: "",
-        price: "",
+        price: 1,
+    },
+    {
+        title: {
+            en: "Chocolates",
+            el: "Σοκολάτες",
+        },
+        desc: {
+            en: "",
+            el: "",
+        },
+        img: "",
+        price: 1,
     },
 ];
 

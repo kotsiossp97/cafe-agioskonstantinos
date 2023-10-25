@@ -3,13 +3,16 @@
     padding: 1rem;
     &__copyright {
         text-align: center;
-        padding-top: 1rem;
+        padding-top: .2rem;
 
         a,
         a:visited,
         a:active {
             text-decoration: none;
-            color: currentColor;
+            color: #fcaf25;
+            text-shadow: 0 5px 15px rgba(black, .7);
+            font-weight: 800;
+            font-size: .9rem;
             transition: all .2s ease-in;
 
             &:hover {

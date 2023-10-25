@@ -1,5 +1,5 @@
 import React from "react";
-import collage from "../assets/landing_collage-2x.png";
+import collage from "../assets/landing_collage-4x.png";
 import styles from "./landing.module.scss";
 import { Button, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
@@ -32,11 +32,17 @@ const Landing = () => {
 
     return (
         <div className={styles.landing} id="home">
-            <img
-                src={collage}
-                alt="Landing Collage"
-                className={styles.landing__image}
-            />
+            <picture>
+                <source srcSet={require('../assets/landing_collage-4x.png')} media="(min-width: 1200px)" />
+                <source srcSet={require('../assets/landing_collage-3x.png')} media="(min-width: 900px)" />
+                <source srcSet={require('../assets/landing_collage-2x.png')} media="(min-width: 600px)" />
+
+                <img
+                    src={require('../assets/landing_collage-2x.png')}
+                    alt="Landing Collage"
+                    className={styles.landing__image}
+                />
+            </picture>
 
             <div className={styles.landing__logo}>
                 <img src={logo} alt="cafe logo" />

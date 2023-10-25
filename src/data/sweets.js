@@ -29,8 +29,8 @@ const sweetItems = [
             el: "Γλυκό Της Ημέρας",
         },
         desc: {
-            en: "A sweet option that changes daily, offering a tasty treat to complement your coffee.",
-            el: "Μια γλυκία επιλογή που αλλάζει καθημερινά, προσφέροντας μια νόστιμη απόλαυση για να συμπληρώσει τον καφέ σας.",
+            en: "A delightful surprise that changes with each visit, offering a fresh and tasty treat to complement your coffee or tea.",
+            el: "Μια απολαυστική έκπληξη που αλλάζει με κάθε επίσκεψη, προσφέροντας μια φρέσκια και νόστιμη απόλαυση για να συμπληρώσει τον καφέ ή το τσάι σας.",
         },
         img: "glyko_meras.png",
         price: 3,

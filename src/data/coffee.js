@@ -9,7 +9,7 @@ const coffeeItems = [
             el: "Παραδοσιακός και δυνατός καφές, υπογραφή της κυπριακής κουλτούρας.",
         },
         img: "cyprus_coffee.png",
-        price: 1.5,
+        price: 1,
     },
     {
         title: {
@@ -56,8 +56,8 @@ const coffeeItems = [
             en: "Cold espresso with milk.",
             el: "Παγωμένος εσπρέσο με γάλα.",
         },
-        img: "iced_latte.png",
-        price: 2.5,
+        img: "latte.png",
+        price: 2,
     },
     {
         title: {
@@ -69,7 +69,7 @@ const coffeeItems = [
             el: "Ζεστός εσπρέσο με αφρόγαλα.",
         },
         img: "cappuccino.png",
-        price: 2.5,
+        price: 2,
     },
     {
         title: {
@@ -85,6 +85,18 @@ const coffeeItems = [
     },
     {
         title: {
+            en: "Latte Macchiato",
+            el: "Λάττε",
+        },
+        desc: {
+            en: "Hot milk with espresso shot",
+            el: "Ζεστό γάλα με shot εσπρέσο",
+        },
+        img: "latte.png",
+        price: 2,
+    },
+    {
+        title: {
             en: "Espresso",
             el: "Εσπρέσο",
         },
@@ -93,7 +105,7 @@ const coffeeItems = [
             el: "Διπλό shot εσπρέσο.",
         },
         img: "espresso.png",
-        price: 2,
+        price: 1.5,
     },
     {
         title: {
@@ -105,6 +117,18 @@ const coffeeItems = [
             el: "Δροσιστικό ρόφημα από καφέ που φτιάχνεται από κρύο νερό, καφέ σκόνη, ζάχαρη και πάγο, συνήθως σε συνδυασμό με γάλα.",
         },
         img: "frappe.png",
+        price: 2,
+    },
+    {
+        title: {
+            en: "Nescafe",
+            el: "Nescafe",
+        },
+        desc: {
+            en: "Well-known hot instant coffee.",
+            el: "Ο γνωστός ζεστός, στιγμιαίος καφές.",
+        },
+        img: "hotcup.png",
         price: 2,
     },
 ];
