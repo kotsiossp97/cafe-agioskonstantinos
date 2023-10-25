@@ -29,7 +29,7 @@ const Footer = () => {
                 </IconButton>
             </Box>
 
-            <Typography component='p' variant='caption' className={styles.footer__copyright}>Developed & Designed with 💖 by <a href='https://github.com/kotsiossp97' target='_blank' rel="noreferrer">Konstantinos Andreou</a>, &copy; 2023</Typography>
+            <Typography component='p' variant='caption' className={styles.footer__copyright}>Developed & Designed with 💖 by <a href='https://kotsiossp97.github.io' target='_blank' rel="noreferrer">Konstantinos Andreou</a>, &copy; 2023</Typography>
         </Box>
     )
 }

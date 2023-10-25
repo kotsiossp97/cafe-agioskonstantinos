@@ -1,5 +1,4 @@
 import React from "react";
-import collage from "../assets/landing_collage-4x.png";
 import styles from "./landing.module.scss";
 import { Button, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
