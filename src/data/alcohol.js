@@ -101,11 +101,35 @@ const alcoholItems = [
             el: "Ούζο",
         },
         desc: {
-            en: "Ouzo, 200ml",
+            en: "Ouzo, 200ml.",
             el: "Ούζο, 200ml.",
         },
         img: "ouzo.png",
         price: 10,
+    },
+    {
+        title: {
+            en: "Vodka",
+            el: "Βότκα",
+        },
+        desc: {
+            en: "Vodka, by glass.",
+            el: "Βότκα, ποτήρι.",
+        },
+        img: "",
+        price: 4,
+    },
+    {
+        title: {
+            en: "Gin",
+            el: "Τζίν",
+        },
+        desc: {
+            en: "Gin, by glass.",
+            el: "Τζίν, ποτήρι.",
+        },
+        img: "",
+        price: 4,
     },
 ];
 export default alcoholItems;
