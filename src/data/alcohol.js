@@ -9,7 +9,7 @@ const alcoholItems = [
             el: "Τοπική μπύρα, 330 ml",
         },
         img: "keo.png",
-        price: 2.5,
+        price: 2,
     },
     {
         title: {
@@ -21,7 +21,7 @@ const alcoholItems = [
             el: "Εμφιαλωμένη μπύρα, 330 ml",
         },
         img: "carlsberg.png",
-        price: 2.5,
+        price: 2,
     },
     {
         title: {
