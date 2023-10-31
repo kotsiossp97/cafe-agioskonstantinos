@@ -13,12 +13,12 @@ const foodItems = [
     },
     {
         title: {
-            en: 'Beef Doner - "Skepasti"',
-            el: 'Γύρος Βοδινό - "Σκεπαστή"',
+            en: '"Skepasti"',
+            el: '"Σκεπαστή"',
         },
         desc: {
-            en: "Beef doner with cheese and mustard sauce in greek pitta with french fries.",
-            el: "Βοδινός γύρος με τυρί και σάλτσα μουστάρδας σε ελληνική πίτα με πατάτες τηγανιτές.",
+            en: "Beef doner with cheese and mustard sauce in greek pitta with french fries. Instead of doner, it can be served with chicken or burger.",
+            el: "Βοδινός γύρος με τυρί και σάλτσα μουστάρδας σε ελληνική πίτα με πατάτες τηγανιτές. Μπορεί να σερβιριστεί με κοτόπουλο ή χάμπουργκερ αντί για γύρο.",
         },
         img: "skepasti.png",
         price: 7.5,
@@ -93,7 +93,7 @@ const foodItems = [
             el: "Κοτόπουλο , μπέϊκον, τυρί cheddar, μουστάρδα-μαγιονέζα",
         },
         img: "chicken_wrap.png",
-        price: 6,
+        price: 7,
     },
     {
         title: {
@@ -130,6 +130,18 @@ const foodItems = [
         },
         img: "pizza_special.png",
         price: 7,
+    },
+{
+        title: {
+            en: "Pitta Sandwich",
+            el: "Σάντουιτς στην πίτα",
+        },
+        desc: {
+            en: "Cheese, bacon, halloumi cheese, french fries in cyprus pita bread.",
+            el: "Τυρί, χαλλούμι, μπέϊκον, πατάτες σε κυπριακή πίτα.",
+        },
+        img: "",
+        price: 6,
     },
 ];
 
