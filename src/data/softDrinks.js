@@ -6,7 +6,7 @@ const softDrinksItems = [
         },
         desc: {
             en: "Traditional soft drinks, peach, apple-pomegrenate, strawberry-lemon and tangerine.",
-            el: "Παραδοσιακά αναψυκτικά, ροδακινάδα, μήλο-ρόδι, φράουλα-λεμόνι και μανταρινάδα.",
+            el: "Παραδοσιακά αναψυκτικά, ροδακινάδα, μήλο-ρόδι και φράουλα-λεμόνι.",
         },
         img: "giagiamas.png",
         price: 3,
@@ -22,6 +22,18 @@ const softDrinksItems = [
         },
         img: "granita.png",
         price: 3,
+    },
+{
+        title: {
+            en: "Traditional Squash",
+            el: "Παραδοσιακό Squash",
+        },
+        desc: {
+            en: "Traditional homemade lemonade and mandarin squash",
+            el: "Παραδοσιακή σπιτική λεμονάδα και μανταρινάδα.",
+        },
+        img: "",
+        price: 2,
     },
     {
         title: {
