@@ -5,8 +5,8 @@ const sweetItems = [
             el: "Βάφλα",
         },
         desc: {
-            en: "Delicious sweet with a characteristic grid, usually served with chocolate and ice cream.",
-            el: "Νόστιμο γλυκό με χαρακτηριστικό πλέγματος, συνήθως σερβίρεται με σοκολάτα και παγωτό.",
+            en: "Delicious sweet, usually served with chocolate and ice cream. You can add Caprice, marshmallows, biscuit, oreo, smarties or strawberries (€0.50).",
+            el: "Νόστιμο γλυκό συνήθως σερβίρεται με σοκολάτα και παγωτό. Μπορείτε να προσθέσετε Caprice, marshmallows, μπισκότο, oreo, smarties ή φράουλες (+€0.50).",
         },
         img: "vafla.png",
         price: 5,
@@ -33,7 +33,7 @@ const sweetItems = [
             el: "Μια απολαυστική έκπληξη που αλλάζει με κάθε επίσκεψη, προσφέροντας μια φρέσκια και νόστιμη απόλαυση για να συμπληρώσει τον καφέ ή το τσάι σας.",
         },
         img: "glyko_meras.png",
-        price: 3,
+        price: 4,
     },
 ];
 
