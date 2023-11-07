@@ -116,7 +116,7 @@ const alcoholItems = [
             en: "Vodka, by glass.",
             el: "Βότκα, ποτήρι.",
         },
-        img: "",
+        img: "vodka.png",
         price: 4,
     },
     {
@@ -128,7 +128,7 @@ const alcoholItems = [
             en: "Gin, by glass.",
             el: "Τζίν, ποτήρι.",
         },
-        img: "",
+        img: "gin.png",
         price: 4,
     },
 ];

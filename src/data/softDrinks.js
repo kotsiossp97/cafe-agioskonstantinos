@@ -23,7 +23,7 @@ const softDrinksItems = [
         img: "granita.png",
         price: 3,
     },
-{
+    {
         title: {
             en: "Traditional Squash",
             el: "Παραδοσιακό Squash",

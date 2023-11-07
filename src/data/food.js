@@ -131,7 +131,7 @@ const foodItems = [
         img: "pizza_special.png",
         price: 7,
     },
-{
+    {
         title: {
             en: "Pitta Sandwich",
             el: "Σάντουιτς στην πίτα",

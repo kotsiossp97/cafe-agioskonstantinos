@@ -58,6 +58,7 @@ const Menu = (props) => {
                 sx={{
                     overflowX: "visible",
                     overflowY: "auto",
+                    overscrollBehavior: "contain"
                 }}
                 rowSpacing={1}
                 columnSpacing={{xs: 0, lg: 1}}
