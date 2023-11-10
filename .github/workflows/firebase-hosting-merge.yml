@@ -6,6 +6,12 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - master
+env:
+  REACT_APP_FIREBASE_API_KEY: '${{ secrets.REACT_APP_FIREBASE_API_KEY}}'
+  REACT_APP_FIREBASE_MSG_SENDER_ID: '${{ secrets.REACT_APP_FIREBASE_MSG_SENDER_ID}}'
+  REACT_APP_FIREBASE_APP_ID: '${{ secrets.REACT_APP_FIREBASE_APP_ID}}'
+  REACT_APP_FIREBASE_MEAS_ID: '${{ secrets.REACT_APP_FIREBASE_MEAS_ID}}'
+  REACT_APP_FIREBASE_DB_URL: '${{ secrets.REACT_APP_FIREBASE_DB_URL}}'
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
